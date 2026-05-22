@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sai Ram Graphics</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    header{
+      background:#111827;
+      color:white;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      font-size:28px;
+      color:#00d4ff;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#00d4ff;
+    }
+
+    .hero{
+      height:90vh;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      background:#00d4ff;
+      color:#111;
+      padding:15px 35px;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    .services{
+      padding:80px 40px;
+      text-align:center;
+      background:white;
+    }
+
+    .services h2{
+      font-size:40px;
+      margin-bottom:50px;
+      color:#111827;
+    }
+
+    .service-box{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#f9fafb;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#00a2c7;
+    }
+
+    .gallery{
+      padding:80px 40px;
+      background:#e5e7eb;
+      text-align:center;
+    }
+
+    .gallery h2{
+      font-size:40px;
+      margin-bottom:40px;
+    }
+
+    .gallery-images{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery-images img{
+      width:100%;
+      border-radius:10px;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .contact{
+      padding:80px 40px;
+      background:white;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-size:40px;
+      margin-bottom:30px;
+    }
+
+    form{
+      max-width:600px;
+      margin:auto;
+    }
+
+    input, textarea{
+      width:100%;
+      padding:15px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    button{
+      background:#00d4ff;
+      border:none;
+      padding:15px 30px;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      border-radius:5px;
+    }
+
+    button:hover{
+      background:#111827;
+      color:white;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+      .hero-content h2{
+        font-size:35px;
+      }
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="logo">
+  <img src="logo_text.png" alt="Logo"></h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+        <div class="logo">
+  <img src="logo.png" alt="Logo">
+</div>
+      <p>Posters | Brouchers | Wedding Cards | Digital Designs</p>
+      <a href="#contact" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+
+      <div class="card">
+        <h3>Multi Colour Brouchers</h3>
+        <p>High quality printing for shops and events.</p>
+      </div>
+
+      <div class="card">
+        <h3>Wedding Cards</h3>
+        <p>Beautiful wedding invitation card designs and printing.</p>
+      </div>
+
+      <div class="card">
+        <h3>Photo Frames</h3>
+        <p>Custom photo editing and premium frame printing.</p>
+      </div>
+
+      <div class="card">
+        <h3>Business Cards</h3>
+        <p>Professional visiting cards with modern designs.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Our Works</h2>
+
+    <div class="gallery-images">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+       <form action="https://formsubmit.co/srisairamgraphicsnalgonda@gmail.com" method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thankyou.html">
+
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© Sri Sai Ram Graphics. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+</html>
